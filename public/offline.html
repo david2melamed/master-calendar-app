@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Offline · Master Calendar</title>
+    <style>
+      :root { --bg: #fff; --text: #0b1b33; --muted: #556479; --accent: #1f4fd1; }
+      @media (prefers-color-scheme: dark) { :root { --bg: #0a1220; --text: #e8eef8; --muted: #9aa9bf; --accent: #6b9bff; } }
+      html, body { height: 100%; margin: 0; background: var(--bg); color: var(--text);
+        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", Inter, system-ui, sans-serif; }
+      main { min-height: 100%; display: grid; place-items: center; padding: 24px; text-align: center; }
+      img { width: 64px; height: 64px; border-radius: 16px; }
+      h1 { font-size: 20px; margin: 16px 0 4px; }
+      p { color: var(--muted); margin: 0 0 20px; font-size: 15px; }
+      button { font: inherit; font-weight: 600; color: #fff; background: var(--accent); border: 0; border-radius: 12px; padding: 10px 18px; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div>
+        <img src="/icons/icon-192.png" alt="" />
+        <h1>You're offline</h1>
+        <p>Master Calendar will update as soon as you're connected again.</p>
+        <button onclick="location.reload()">Try again</button>
+      </div>
+    </main>
+  </body>
+</html>
